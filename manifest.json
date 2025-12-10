@@ -1,6 +1,6 @@
 {
-  "name": "QR Scanner — PWA",
-  "short_name": "QR PWA",
+  "name": "Hyroki QR Scanner",
+  "short_name": "HR QR Scan",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#ffffff",
