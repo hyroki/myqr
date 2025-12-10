@@ -50,7 +50,7 @@ btnPause.onclick = () => {
 
 btnResume.onclick = async () => {
   await listCameras();
-  currentDeviceId = devices.length ? devices[0].deviceId : null;
+  /* currentDeviceId = devices.length ? devices[0].deviceId : null; */
   await startCamera(currentDeviceId);
   btnResume.style.display='none';
   btnPause.style.display='inline-block';
@@ -66,15 +66,15 @@ btnSwitch.onclick = async () => {
 };
 
 btnTorch.onclick = async () => {
-  if(!track) return alert('Torch tidak didukung');
+  if(!track) return alert('Senter tidak didukung');
   const cap = track.getCapabilities ? track.getCapabilities() : {};
-  if(!cap.torch) return alert('Torch tidak didukung di perangkat ini.');
+  if(!cap.torch) return alert('Senter tidak didukung di perangkat ini.');
   torchOn = !torchOn;
   try{
     await track.applyConstraints({ advanced: [{ torch: torchOn }]});
-    btnTorch.textContent = torchOn ? 'Torch: ON' : 'Toggle Torch';
+    btnTorch.textContent = torchOn ? 'Senter: ON' : 'Nyalakan senter';
   }catch(e){
-    alert('Gagal toggle torch: ' + e.message);
+    alert('Gagal nyalakan senter: ' + e.message);
   }
 };
 
