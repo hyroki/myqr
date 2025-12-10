@@ -1,7 +1,7 @@
 (function(){
   if (window.jsQR) return;
   var s = document.createElement('script');
-  s.src = '/js/jsQR.js';
+  s.src = 'js/jsQR.js';
   s.onload = function(){ if(window.jsQR) console.log('jsQR loaded (local)'); };
   s.onerror = function(){
     console.warn('Local jsQR not found, loading CDN copy');

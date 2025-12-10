@@ -1,13 +1,12 @@
 const CACHE_NAME = 'qr-pwa-v1';
 const ASSETS = [
-  '/',
-  '/index.html',
-  '/manifest.json',
-  '/icons/icon-192.png',
-  '/icons/icon-512.png',
-  '/js/app.js',
-  '/js/jsQR-loader.js',
-  'https://cdn.jsdelivr.net/npm/jsqr/dist/jsQR.js'
+  'index.html',
+  'manifest.json',
+  'icons/icon-192.png',
+  'icons/icon-512.png',
+  'js/app.js',
+  'js/jsQR-loader.js',
+  'js/jsQR.js'
 ];
 
 self.addEventListener('install', (e) => {
