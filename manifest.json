@@ -1,7 +1,7 @@
 {
   "name": "Hyroki QR Scanner",
   "short_name": "HR QR Scan",
-  "start_url": "/",
+  "start_url": "/myqr",
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#0b74de",
